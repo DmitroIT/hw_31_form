@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>hw 31</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <form id="signup" method="post" action="#" >
+            <!-- fullname -->
+            <div>
+                <label for="fullname">Имя, фамилия</label>
+                <input id="fullname" type="text" name="fullname" autofocus required/>
+                <small></small>
+            </div>
+
+            <!-- birth -->
+            <div>
+                <label for="birth">Дата рождения</label>
+                <input id="birth" type="text" name="birth" placeholder="дд.мм.гг" required/>
+                <small></small>
+            </div>
+
+            <!-- gender -->
+            <div>
+                <p>Выбрать пол:</p>
+                <input id="genderFemale" type="radio" name="gender" value="female" />
+                <label for="genderFemale">женский</label><br>
+                <input id="genderMale" type="radio" name="gender" value="male" checked />
+                <label for="genderMale">мужской</label>
+            </div>
+
+            <!-- city -->
+            <div>
+                <label for="location">город проживания</label>
+                <select id="location" name="location">
+                    <option value="null">не выбран</option>
+                    <option value="city 1">Город 1</option>
+                    <option value="city 2">Город 2</option>
+                    <option value="city 3">Город 3</option>
+                    <option value="city 4">Город 4</option>
+                    <option value="city 5">Город 5</option>
+                    <option value="city 6">Город 6</option>
+                </select>
+            </div>
+
+            <!-- address -->
+            <div class="address__box">
+                <label for="address">Адрес</label>
+                <textarea name="address" id="address" placeholder="ул, **, дом, ***, кв, ***" required></textarea>
+            </div>
+
+            <!-- language -->
+            <div>
+                <p>Какими владеете языками:</p>
+                <fieldset>
+                    <label>английский<input id="language" type="checkbox" name="language" value="english" /></label>
+                    <label>польский<input id="language" type="checkbox" name="language" value="polish" /></label>
+                    <label>французский<input id="language" type="checkbox" name="language" value="french" /></label>
+                    <label>испанский<input id="language" type="checkbox" name="language" value="spanish" /></label>
+                </fieldset>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                <button type="reset">сбросить</button>
+                <button type="submit">сохранить</button>
+            </div>
+        </form>
+    </div>
+
+    <table></table>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
